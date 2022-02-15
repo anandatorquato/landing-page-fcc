@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+/* Base Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-weight: 400;
+  height: 200vh;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #4b7f52;
+  transition: 0.5s, easy-in-out;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  margin: 100px;
+  padding: 50px;
+}
+
+section {
+  height: auto;
+}
+
+h1 {
+  font-size: 36px;
+}
+/* Navigation bar */
+
+nav {
+  background: #f5f5f5;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  height: 50px;
+}
+#logo img {
+  width: auto;
+  height: auto;
+}
+
+.menu {
+  display: none;
+}
+
+div ul {
+  display: flex;
+}
+
+div ul li {
+  margin: 0 15px;
+}
+.nav-link {
+  margin: 0 10px;
+}
+
+/* Header Elements */
+.header {
+  height: 100vh;
+}
+
+.header {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header-1 h1,
+.header-1 h2,
+.header-1 p,
+.header-1 button {
+  margin: 5px 0;
+}
+
+button {
+  padding: 10px 20px;
+  border-style: none;
+  background: #4b7f52;
+  color: #eee;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: #98c39e;
+  color: #000;
+  transition: 0.9s ease-in-out;
+}
+
+/* Video */
+
+.video {
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Features */
+
+#features {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#features h1,
+.video h1 {
+  margin-bottom: 20px;
+}
+
+/* Products */
+
+#products div {
+  gap: 20px;
+  text-align: center;
+}
+
+#products .box img {
+  max-height: 350px;
+}
+/* Contact */
+
+fieldset {
+  text-align: center;
+  border: none;
+}
+input {
+  width: 50%;
+  padding: 10px;
+}
+
+button {
+  width: 50%;
+}
+
+form h1,
+form button {
+  margin: 20px 0;
+}
+form h2 {
+  margin: 5px 0;
+}
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  color: #eee;
+  background: #080d08;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 902px) {
+  /* General Setting */
+
+  * {
+    font-size: 18px;
+  }
+
+  section {
+    height: auto;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 25px;
+    margin: 0px;
+  }
+
+  /* Navigation bar */
+  nav {
+    flex-direction: column;
+  }
+  nav .wrapped {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  div ul {
+    display: none;
+  }
+
+  div ul li {
+    padding: 5px;
+  }
+
+  .showmenu {
+    display: block;
+  }
+
+  /* Header Section */
+  .header {
+    align-items: center;
+    text-align: center;
+  }
+  .header-1 h1,
+  .header-1 h2,
+  .header-1 p,
+  .header-1 button {
+    margin-bottom: 5px;
+  }
+
+  .header-2 {
+    display: none;
+  }
+
+  /* Features */
+
+  #features .wrapped-boxes {
+    flex-direction: column;
+  }
+
+  #features .box {
+    margin: 40px 0;
+  }
+
+  /* Video */
+  .video {
+    height: auto;
+  }
+  .video h1 {
+    margin-bottom: 15px;
+  }
+
+  /* Products */
+  #products h2,
+  #products p,
+  #products .box {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  #products div {
+    flex-direction: column;
+  }
+
+  input {
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
